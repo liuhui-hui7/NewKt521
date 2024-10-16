@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--        侧滑菜单-->
+        <cn.leaqi.drawer.SwipeDrawer
+            android:id="@+id/main"
+            tools:context=".view.activity.Detail_Activity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:mode="cover"
+            android:layout_weight="10"
+            android:background="@color/blunk"
+            app:bottomLayout="@id/Detail">
+
+            <RelativeLayout
+                android:id="@+id/Detail_aa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/fan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/fan1"
+                    />
+
+                <ImageView
+                    android:id="@+id/Detail_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/Detail_Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_alignBottom="@id/Detail_Image"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:id="@+id/Detail_commentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="评论"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/Detail_Image"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="20dp" />
+
+                <ImageView
+                    android:id="@+id/Detail_xin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/xin"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/Detail_Image"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="关注"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/Detail_xin"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="已关注"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/Detail_xin"
+                    android:layout_marginRight="30dp"/>
+                <TextView
+                    android:id="@+id/Detail_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="放松发"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Detail_Image"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Detail_movieType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="发电方式"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Detail_Name"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Detail_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="发电方式"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Detail_Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/Detail_movieType"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Detail_releaseTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="的身上的"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Detail_duration"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Detail_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="的身上的"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Detail_duration"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/Detail_releaseTime"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/push"
+                    android:layout_below="@id/Detail_place"
+                    android:layout_centerInParent="true"
+                    />
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Detail"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@color/blunk">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/Detail_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabIndicatorColor="@color/fen"
+                    android:background="@color/blunk">
+                </com.google.android.material.tabs.TabLayout>
+<!--                嵌套滚动视图-->
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/js"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Detail_tab">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/jq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剧情简介"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"/>
+                        <TextView
+                            android:id="@+id/Detail_jq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/jq"/>
+                        <TextView
+                            android:id="@+id/yz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="演职人员"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/Detail_jq"/>
+
+                        <TextView
+                            android:id="@+id/Detail_director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="导演"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/yz"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/Rec_director"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Detail_director"
+                            android:layout_marginTop="10dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/Actor_director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="演员"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/Rec_director"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/Rec_Actor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Actor_director"
+                            android:layout_marginTop="10dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/Rec_Video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/js"
+                    android:layout_marginTop="10dp">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/Rec_postlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/js"
+                    android:layout_marginTop="10dp">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+        </cn.leaqi.drawer.SwipeDrawer>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@color/green"
+            android:orientation="horizontal"
+            >
+            <android.widget.Button
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="@color/yellow"
+                android:text="写影评"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"/>
+
+            <android.widget.Button
+                android:id="@+id/xuan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/fen"
+                android:text="选座购票"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

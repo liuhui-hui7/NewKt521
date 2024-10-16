@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF141831</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#8BC34A</color>
+    <color name="green1">#50B574</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="blunk">#141931</color>
+    <color name="fen">#FFE91C69</color>
+    <color name="fen1">#FFFE72A0</color>
+    <color name="yellows">#141931</color>
+    <color name="hui">#FF989898</color>
+    <color name="lan">#1C2243</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/Releas_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:background="@color/lan"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/Releas_image"
+            android:layout_marginRight="10dp"
+            >
+
+<!--            <TextView-->
+<!--                android:id="@+id/happy"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="150dp"/>-->
+            <TextView
+                android:id="@+id/Releas_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分额威风威风"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/DataFrom__Releas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="二件为"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Releas_Name"
+                />
+
+            <TextView
+                android:id="@+id/People_Releas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="二件为"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/DataFrom__Releas"
+                />
+
+
+            <android.widget.Button
+                android:id="@+id/Visibiy_gson"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:textSize="15dp"
+                android:text="预约"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/People_Releas"
+                android:layout_marginRight="20dp"
+                android:background="@color/fen"/>
+
+
+            <android.widget.Button
+                android:id="@+id/Visibiy_gsons"
+                android:visibility="invisible"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:textSize="15dp"
+                android:text="已预约"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/People_Releas"
+                android:layout_marginRight="20dp"
+                android:background="@color/yellows"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

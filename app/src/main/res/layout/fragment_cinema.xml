@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+  </data>
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragment.CinemaFragment">
+      <com.google.android.material.tabs.TabLayout
+        android:id="@+id/cinema_tab"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="@color/lan"
+          app:tabSelectedTextColor="@color/white"
+          app:tabIndicatorColor="@color/fen1"
+          android:layout_weight="1"
+          >
+      </com.google.android.material.tabs.TabLayout>
+
+      <androidx.viewpager.widget.ViewPager
+        android:id="@+id/cinema_vp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:layout_below="@id/cinema_tab"
+        android:background="@color/blunk">
+      </androidx.viewpager.widget.ViewPager>
+
+<!--      实现下拉刷新和上拉加载更多功能的布局组件-->
+      <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_Refres"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_tab"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_commend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_below="@id/cinema_tab"
+          android:layout_marginTop="20dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+      </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_Nearb"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/cinema_tab"
+        android:layout_marginTop="20dp">
+      </androidx.recyclerview.widget.RecyclerView>
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_region"
+          android:layout_width="100dp"
+          android:layout_height="match_parent"
+        android:layout_below="@id/cinema_tab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/lan">
+      </androidx.recyclerview.widget.RecyclerView>
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_Cinema"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        android:layout_toRightOf="@id/rec_region"
+        android:layout_below="@id/cinema_tab"
+        android:layout_marginTop="20dp"
+        android:background="@color/lan">
+      </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</layout>

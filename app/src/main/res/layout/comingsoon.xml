@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/Coming_image"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/Coming_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@id/Coming_image"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/Coming_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="二位附件为"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Coming_image"
+                android:layout_centerInParent="true"
+                />
+            <android.widget.Button
+                android:id="@+id/aa"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="购票"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Coming_Name"
+                android:layout_centerInParent="true"
+                android:background="@color/fen"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

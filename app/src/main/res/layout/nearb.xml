@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/lan"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/Nearb_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/Nearb_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分额威风威风"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/Nearb_image"
+                />
+
+            <TextView
+                android:id="@+id/Nearb_Releas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="二件为"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/Nearb_Name"
+                android:layout_toRightOf="@id/Nearb_image"
+                />
+            <TextView
+                android:id="@+id/Nearb_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="二件为"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

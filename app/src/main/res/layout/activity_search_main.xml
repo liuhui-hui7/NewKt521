@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        
+    </data>
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.SearchMainActivity"
+        android:background="@color/blunk">
+
+        <RelativeLayout
+            android:id="@+id/bb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fan1"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_search_bos"
+                android:layout_toRightOf="@id/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/Search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/searchEditText"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_search"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Rec_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/Room_Search">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/Room_Search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/bb">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <RelativeLayout
+            android:id="@+id/Rela_Gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/Rec_Search"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/aa"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/data_no"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="没有相关搜索结果，换个词试试吧"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/aa"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</layout>

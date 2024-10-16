@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+   <data>
+
+   </data>
+    <!--    嵌套多个滚动视图-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/bb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.fragment.MoveFragment"
+            android:background="@color/black">
+            <com.stx.xhb.androidx.XBanner
+                android:id="@+id/banner_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/aa"
+                android:layout_marginTop="8dp"
+                app:AutoPlayTime="3000"
+                app:isClipChildrenMode="true"/>
+            <RelativeLayout
+                android:id="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/banner_image"
+                android:layout_marginTop="10dp"
+                android:background="@color/lan">
+                <ImageView
+                    android:id="@+id/xin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_hot"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="正在热映"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/xin"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="更多"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Rec_Coming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dd"
+                android:layout_marginTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/ee"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/Rec_Coming"
+                android:layout_marginTop="10dp"
+                android:background="@color/lan">
+                <ImageView
+                    android:id="@+id/xin1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_soon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="即将上映"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/xin1"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="更多"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Rec_Reseas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ee"
+                android:layout_marginTop="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/Rec_Reseas"
+                android:layout_marginTop="10dp"
+                android:background="@color/lan">
+                <ImageView
+                    android:id="@+id/xin2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_popular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="热门电影"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/xin2"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="更多"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Rec_Hots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ff"
+                android:layout_marginTop="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Rec_Hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rec_Hots"
+                android:layout_marginTop="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

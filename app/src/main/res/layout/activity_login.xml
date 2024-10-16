@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/register_login_bg">
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/yellows"
+            android:layout_below="@id/bb">
+        </RelativeLayout>
+
+        <!--  shape   渐变-->
+        <TextView
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+          android:background="@drawable/shape"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入邮箱账号"
+            android:text="chao101366@163.com"
+            android:textColor="@color/hui"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border"
+            android:layout_alignBottom="@id/shape"
+            />
+        <EditText
+            android:id="@+id/login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:textColor="@color/hui"
+            android:text="chao1013!@#"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:layout_below="@id/login_email"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <android.widget.Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:text="忘记密码"
+            android:textSize="15dp"
+            android:background="@drawable/buttonborder"
+            android:layout_below="@id/login_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="暂无账号，立即注册"
+            android:textColor="@color/hui"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/login_pwd"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <android.widget.Button
+            android:id="@+id/Login_Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/login_pwd"
+            android:layout_marginTop="30dp"
+            android:button="@null"
+            android:text="登录"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_backgroudcolor"/>
+
+        <RelativeLayout
+            android:id="@+id/huo1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Login_Button">
+
+            <TextView
+                android:id="@+id/huo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="或"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/huo"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/huo"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@id/huo1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/login_wx"
+                android:background="@drawable/buttongreen"
+                android:scaleType="center"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hotimage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                />
+
+
+            <android.widget.Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="购票"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@id/hotimage"
+                android:layout_alignParentRight="true"
+                android:background="@color/fen"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:id="@+id/hot_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="wewdw"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@id/hotimage"/>
+
+            <TextView
+                android:id="@+id/hot_count"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:text="分"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/hotimage"
+                android:layout_toRightOf="@id/hot_Name"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
